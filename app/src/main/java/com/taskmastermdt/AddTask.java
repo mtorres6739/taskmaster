@@ -36,7 +36,7 @@ ConstraintLayout constraintLayout;
         constraintLayout = findViewById(R.id.constraintLayout);
        Button displaySuccessMessageAfterAddTaskSubmit = AddTask.this.findViewById(R.id.AddTaskBtnAddTask);
        displaySuccessMessageAfterAddTaskSubmit.setOnClickListener(view -> {
-           Snackbar snackbar = Snackbar.make(constraintLayout, "Submitted!", Snackbar.LENGTH_SHORT);
+           Snackbar snackbar = Snackbar.make(constraintLayout, "Task Submitted!", Snackbar.LENGTH_SHORT);
            snackbar.show();
        });
     }

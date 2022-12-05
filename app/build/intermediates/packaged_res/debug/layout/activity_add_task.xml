@@ -38,8 +38,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="52dp"
             android:ems="17"
+            android:hint="Task Description"
             android:inputType="textPersonName"
-            android:text="Task Description"
+            android:minHeight="48dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/AddTaskPlanTextEditMyTaskTitle" />
 
@@ -64,8 +65,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="80dp"
             android:ems="17"
+            android:hint="My Task"
             android:inputType="textPersonName"
-            android:text="My Task"
+            android:minHeight="48dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/AddTasksTextViewMyTasks" />
 
