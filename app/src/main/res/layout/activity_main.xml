@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <Button
         android:id="@+id/MainActivityBtnAllTasks"
@@ -40,38 +40,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/MainActivityBtnTaskTakeMedication"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="68dp"
-        android:text="Take Medication"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainActivityTextViewMyTasks" />
-
-    <Button
-        android:id="@+id/MainActivityBtnTaskTakeOutTrash"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="20dp"
-        android:text="Take Out Trash"
-        app:layout_constraintBottom_toTopOf="@+id/MainActivityBtnTaskUpdateCalendar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainActivityBtnTaskTakeMedication" />
-
-    <Button
-        android:id="@+id/MainActivityBtnTaskUpdateCalendar"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
-        android:text="Update Calendar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainActivityBtnTaskTakeOutTrash" />
-
     <ImageButton
         android:id="@+id/MainActivityImgBtnSettings"
         android:layout_width="wrap_content"
@@ -91,5 +59,14 @@
         android:layout_marginTop="27dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainActivityTextViewMyTasks" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MainActivityRecyclerViewTaskList"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainActivityTextViewUsernameTasks" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
