@@ -9,6 +9,14 @@ TaskMaster is a simple android app that allows you to manage your tasks.
 
 ## Change Log
 
+### 1.0.2
+
+- Added a TaskList Model class
+- Added a TaskList Adapter class
+- Added a TaskList Fragment class
+- Added a TaskList Recycler View to the Home Screen
+
+
 ### 1.0.1
 
 - Added Task Detail Screen
@@ -27,7 +35,7 @@ TaskMaster is a simple android app that allows you to manage your tasks.
 ## Screenshots
 
 Main Activity Screen
-![Main Activity Screen](/readme-images/lab-26/MainActivityScreen2.png)
+![Main Activity Screen](/readme-images/lab-26/MainActivityScreen3.png)
 
 Add Task Activity Screen
 ![Add Task Activity Screen](/readme-images/lab-26/AddTaskActivityScreen.png)
@@ -39,7 +47,7 @@ Settings Activity Screen
 ![Settings Activity Screen](/readme-images/lab-26/SettingsScreen.png)
 
 Task Detail Activity Screen
-![Task Detail Activity Screen](/readme-images/lab-26/TaskDetailScreen.png)
+![Task Detail Activity Screen](/readme-images/lab-26/TaskDetailScreen2.png)
 
 #### Resources
 

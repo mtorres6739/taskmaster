@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TaskDetail">
+    tools:context=".activities.TaskDetail">
 
     <Button
         android:id="@+id/TaskDetailBtnBack"
@@ -47,7 +47,7 @@
         android:layout_height="270dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
-        android:text="@string/lorem"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TaskDetailTextViewTaskName" />
+        app:layout_constraintTop_toBottomOf="@+id/TaskDetailTextViewTaskName"
+        tools:text="@string/lorem" />
 </androidx.constraintlayout.widget.ConstraintLayout>
