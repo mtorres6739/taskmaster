@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
+
 import com.taskmastermdt.R;
 import com.taskmastermdt.database.TaskmasterMDTDatabase;
 import com.taskmastermdt.models.TaskList;
@@ -24,7 +24,6 @@ public class AddTask extends AppCompatActivity {
     TaskmasterMDTDatabase taskmasterMDTDatabase;
     Spinner taskListStatusTypeSpinner;
 
-//    ConstraintLayout constraintLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +41,6 @@ public class AddTask extends AppCompatActivity {
 
         setupTaskListStatusTypeSpinner();
         backBtn();
-//        snackbarMessage();
         setupAddTaskBtn();
     }
 
@@ -78,12 +76,4 @@ public class AddTask extends AppCompatActivity {
         });
     }
 
-//    public void snackbarMessage() {
-//        constraintLayout = findViewById(R.id.constraintLayout);
-//        Button displaySuccessMessageAfterAddTaskSubmit = AddTask.this.findViewById(R.id.AddTaskBtnAddTask);
-//        displaySuccessMessageAfterAddTaskSubmit.setOnClickListener(view -> {
-//            Snackbar snackbar = Snackbar.make(constraintLayout, "Task Submitted!", Snackbar.LENGTH_SHORT);
-//            snackbar.show();
-//        });
-//    }
 }

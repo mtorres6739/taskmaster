@@ -40,7 +40,7 @@ public class TaskListRecyclerViewAdapter extends RecyclerView.Adapter<TaskListRe
         taskListFragmentTextViewName.setText((position + 1) + ". " + taskList.getName());
 
         TextView taskListFragmentTextViewBody = holder.itemView.findViewById(R.id.TaskListTextViewTaskBody);
-        taskListFragmentTextViewBody.setText(taskList.getBody() + "\n" + "Date Created: " + taskList.getDateCreated());
+        taskListFragmentTextViewBody.setText(taskList.getBody() + "\n" + "\n" + "Date Created: " + taskList.getDateCreated());
 
         TextView taskListFragmentTextViewStatus = holder.itemView.findViewById(R.id.TaskListTextViewTaskStatus);
         taskListFragmentTextViewStatus.setText(taskList.getStatus() + "\n" + "Difficulty: " + taskList.getDifficulty());
@@ -66,4 +66,6 @@ public class TaskListRecyclerViewAdapter extends RecyclerView.Adapter<TaskListRe
             super(itemView);
         }
     }
+
+
 }
