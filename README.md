@@ -6,8 +6,25 @@ TaskMaster is a simple android app that allows you to manage your tasks.
 
 - Add tasks
 - Add/save username
+- View all tasks
+- View task details
+- View task status
+- View task difficulty
+- Save tasks to a database
 
 ## Change Log
+
+### 1.0.3
+
+- Added a difficulty text edit field to the Add Task screen
+- Added a status spinner to the Add Task screen
+- Added a Rooms database to the project
+- Added a Dao interface to the project
+- Refactored the Task Model class to use the Room database
+- Refactored the Task Adapter class to use the Room database
+- Refactored the Task Fragment class to use the Room database
+- Refactored the Recycler View in the Home Screen to use the Room database
+- Refactored the Task Detail Screen to use the Room database and render the task data from the database
 
 ### 1.0.2
 

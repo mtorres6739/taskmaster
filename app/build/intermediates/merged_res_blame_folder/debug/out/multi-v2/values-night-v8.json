@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.taskmastermdt.app-mergeDebugResources-23:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.taskmastermdt.app-mergeDebugResources-26:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/mathewtorres/projects/courses/401/taskmaster/app/src/main/res/values-night/themes.xml",

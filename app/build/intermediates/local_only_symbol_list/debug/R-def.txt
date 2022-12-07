@@ -11,9 +11,16 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable placeholder_tech_image
 drawable placeholder_tech_ipad
+drawable purple_gradient
+drawable rounded_corners
 id AddTaskBtnAddTask
 id AddTaskBtnBack
 id AddTaskPlanTextEditMyTaskTitle
+id AddTaskSpinnerStatus
+id AddTaskTextEditDifficulty
+id AddTaskTextEditTaskDescription
+id AddTaskTextViewDifficulty
+id AddTaskTextViewStatus
 id AddTaskTextViewTaskTitle
 id AddTaskTextViewTextDescription
 id AddTaskTextViewTotalTasks
@@ -38,8 +45,7 @@ id TaskDetailsTextViewLorem
 id TaskListFragment
 id TaskListTextViewTaskBody
 id TaskListTextViewTaskName
-id TaskListTextViewTaskState
-id addTaskPlanTextEditTaskDescription
+id TaskListTextViewTaskStatus
 id constraintLayout
 id frameLayout
 layout activity_add_task
