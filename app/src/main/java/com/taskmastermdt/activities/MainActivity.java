@@ -1,6 +1,9 @@
 package com.taskmastermdt.activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
@@ -13,6 +16,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.taskmastermdt.R;
 import com.taskmastermdt.adapter.TaskListRecyclerViewAdapter;
 import com.taskmastermdt.database.TaskmasterMDTDatabase;
@@ -29,10 +33,13 @@ public class MainActivity extends AppCompatActivity {
     public static final String TASKMASTER_TASK_NAME_TAG = "taskmasterTask";
     public static final String TASKMASTER_TASK_BODY_TAG = "taskmasterTaskBody";
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         taskmasterMDTDatabase = Room.databaseBuilder(
                         getApplicationContext(),
@@ -46,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         addTaskBtn();
         allTasksBtn();
         settingsScreen();
+
     }
 
     @Override
@@ -75,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         taskListRV.setLayoutManager(layoutManager);
         TaskListRecyclerViewAdapter adapter = new TaskListRecyclerViewAdapter(taskListList, this);
         taskListRV.setAdapter(adapter);
+
     }
 
 
@@ -106,6 +115,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(goToSettingsScreen);
         });
     }
+
+
 
 
 }
