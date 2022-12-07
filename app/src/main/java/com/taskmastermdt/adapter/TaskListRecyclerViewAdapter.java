@@ -36,22 +36,20 @@ public class TaskListRecyclerViewAdapter extends RecyclerView.Adapter<TaskListRe
     @Override
     public void onBindViewHolder(@NonNull TaskListViewHolder holder, int position) {
         TextView taskListFragmentTextViewName = holder.itemView.findViewById(R.id.TaskListTextViewTaskName);
-        String taskListName = taskListList.get(position).getName();
-        taskListFragmentTextViewName.setText((position + 1) + ". " + taskListName);
+        TaskList taskList = taskListList.get(position);
+        taskListFragmentTextViewName.setText((position + 1) + ". " + taskList.getName());
 
         TextView taskListFragmentTextViewBody = holder.itemView.findViewById(R.id.TaskListTextViewTaskBody);
-        String taskListBody = taskListList.get(position).getBody();
-        taskListFragmentTextViewBody.setText(taskListBody);
+        taskListFragmentTextViewBody.setText(taskList.getBody() + "\n" + "Date Created: " + taskList.getDateCreated());
 
-        TextView taskListFragmentTextViewState = holder.itemView.findViewById(R.id.TaskListTextViewTaskState);
-        String taskListState = taskListList.get(position).getState();
-        taskListFragmentTextViewState.setText(taskListState);
+        TextView taskListFragmentTextViewStatus = holder.itemView.findViewById(R.id.TaskListTextViewTaskStatus);
+        taskListFragmentTextViewStatus.setText(taskList.getStatus() + "\n" + "Difficulty: " + taskList.getDifficulty());
 
         View taskListItemView = holder.itemView;
         taskListItemView.setOnClickListener(view -> {
             Intent goToTaskDetailIntent = new Intent(callingActivity, TaskDetail.class);
-            goToTaskDetailIntent.putExtra(MainActivity.TASKMASTER_TASK_NAME_TAG, taskListName);
-            goToTaskDetailIntent.putExtra(MainActivity.TASKMASTER_TASK_BODY_TAG, taskListBody);
+            goToTaskDetailIntent.putExtra(MainActivity.TASKMASTER_TASK_NAME_TAG, taskList.getName());
+            goToTaskDetailIntent.putExtra(MainActivity.TASKMASTER_TASK_BODY_TAG, taskList.getName() + taskList.getDateCreated());
             callingActivity.startActivity(goToTaskDetailIntent);
 
         });
